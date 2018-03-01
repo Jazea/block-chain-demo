@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  blockchain.demo:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80:8000"

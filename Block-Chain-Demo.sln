@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlockChain.Demo", "src\BlockChain.Demo.csproj", "{A82F6A35-AD0D-4069-AB62-50B7A5B1377E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4B73999E-87BD-4613-8A4C-B5EF1C567F89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A82F6A35-AD0D-4069-AB62-50B7A5B1377E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82F6A35-AD0D-4069-AB62-50B7A5B1377E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82F6A35-AD0D-4069-AB62-50B7A5B1377E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82F6A35-AD0D-4069-AB62-50B7A5B1377E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B73999E-87BD-4613-8A4C-B5EF1C567F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B73999E-87BD-4613-8A4C-B5EF1C567F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B73999E-87BD-4613-8A4C-B5EF1C567F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B73999E-87BD-4613-8A4C-B5EF1C567F89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68D68241-E0E7-40B2-8806-8DEEECDDD41B}
+	EndGlobalSection
+EndGlobal
