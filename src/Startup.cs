@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,7 +50,7 @@ namespace BlockChain.Demo
                             var data = context.Request.Form["data"][0]; //Form
                             var oldBlock = Repository.BlockChain.Last();
 
-                            block = new Block(oldBlock, data);
+                            block = new Block(oldBlock, Encoding.UTF8.GetBytes(data));
                             if (block.IsValid(oldBlock))
                             {
                                 var blockChain = Repository.BlockChain.ToList();

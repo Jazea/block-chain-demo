@@ -5,10 +5,10 @@
         public Block()
         {
             Index = 0;
-            Timestamp = this.GetTimestamp();
+            Timestamp = this.Timestamp();
             Data = null;
             PrevHash = null;
-            Hash = this.GetHash();
+            Hash = this.Hash();
         }
 
         /// <summary>
@@ -16,13 +16,13 @@
         /// </summary>
         /// <param name="block">Old block</param>
         /// <param name="data"></param>
-        public Block(Block block, string data)
+        public Block(Block block, byte[] data)
         {
             Index = block.Index + 1;
-            Timestamp = this.GetTimestamp();
+            Timestamp = this.Timestamp();
             Data = data;
             PrevHash = block.Hash;
-            Hash = this.GetHash();
+            Hash = this.Hash();
         }
         /// <summary>
         /// Block position
@@ -37,7 +37,7 @@
         /// <summary>
         /// Block Data
         /// </summary>
-        public string Data { get; set; }
+        public byte[] Data { get; set; }
 
         /// <summary>
         /// Block SHA-256 Hash value
