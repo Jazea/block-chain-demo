@@ -27,27 +27,27 @@
         /// <summary>
         /// Block position
         /// </summary>
-        public int Index { get; set; }
+        public int Index { get; }
 
         /// <summary>
         /// Block to generate a timestamp
         /// </summary>
-        public long Timestamp { get; set; }
+        public long Timestamp { get; }
 
         /// <summary>
         /// Block Data
         /// </summary>
-        public byte[] Data { get; set; }
+        public byte[] Data { get; }
 
         /// <summary>
         /// Block SHA-256 Hash value
         /// </summary>
-        public string Hash { get; set; }
+        public string Hash { get; }
 
         /// <summary>
         /// Previous block SHA-256 hash value
         /// </summary>
-        public string PrevHash { get; set; }
+        public string PrevHash { get; }
 
     }
 }
